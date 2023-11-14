@@ -66,7 +66,7 @@ public class SandScript : MonoBehaviour
         else if (other.CompareTag("Water")) {
             SprayScript spraydata = other.GetComponent<SprayScript>();
             if (spraydata != null)
-                if (spraydata.active) { moistness += 10; }
+                if (spraydata.spraying) { moistness += 10; }
         }
         else
         {
