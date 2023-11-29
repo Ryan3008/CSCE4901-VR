@@ -1,2 +1,2 @@
-# CSCE4901-VR
-The project we are working on in 4901, its an interactive VR experience about NASA's PACE Satellite.
+# UnityVR-CSCE4901
+UnityVR-CSCE4901 with unity git ignore included 
