@@ -12,15 +12,17 @@ public class DataBoardScript : MonoBehaviour
     public BoneData Bone;
     public TextMeshPro theData, theName;
     public SpriteRenderer thePictureRenderer;
+    public bool called;
+    public Texture2D texture;
     // Start is called before the first frame update
     void Start()
     {
         this.transform.position = startPoint.transform.position;
         bonefound = false;
+        called = false;
 
         theData.SetText(Bone.Description);
         theName.SetText(Bone.name);
-        //thePictureRenderer.sprite =; later
         
     }
 
@@ -30,8 +32,11 @@ public class DataBoardScript : MonoBehaviour
         if (sandData.fossils)
             bonefound = true;
 
-        if (bonefound) {
+        if (bonefound == true && called == false) {
             this.transform.position = endpoint.transform.position;
+            texture = Resources.Load<Texture2D>("BonePic");
+            thePictureRenderer.sprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f); ;
+            called = true;
         }
     }
 }
