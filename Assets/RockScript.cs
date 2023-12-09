@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoneData : MonoBehaviour
+public class RockScript : MonoBehaviour
 {
-    public string BoneName, dinnoName, pictureFile, Description;
-
+    // Start is called before the first frame update
     void Start()
     {
         // Generate random positions for x, y, and z within range
@@ -15,5 +14,11 @@ public class BoneData : MonoBehaviour
 
         // Set the object's position to the random values
         transform.position = new Vector3(randomX, randomY, randomZ);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
