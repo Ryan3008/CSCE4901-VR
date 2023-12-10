@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BoneData : MonoBehaviour
 {
-    public string BoneName, dinnoName, pictureFile, Description;
+    public string BoneName, dinnoName, pictureFile, Description;//currently these are all preset in the engine, will need to pull from a file later
 
     void Start()
     {

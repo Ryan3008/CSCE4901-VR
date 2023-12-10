@@ -57,7 +57,7 @@ public class SandScript : MonoBehaviour
         {
             Debug.Log("Object with tag Bone has exited the trigger zone.");
             fossils = true;
-            ScreenCapture.CaptureScreenshot("Assets/Resources/BonePic.png");
+            //ScreenCapture.CaptureScreenshot("Assets/Resources/BonePic.png");  Used to save a screenshot of the ingame bone, unused.
             
         }
         else if (other.CompareTag("Rock"))

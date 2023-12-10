@@ -1523,10 +1523,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 193f81fd2a7c83c418117a866dff6841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoneName: 
-  dinnoName: 
-  pictureFile: 
-  Description: 
+  BoneName: Bone
+  dinnoName: Dino
+  pictureFile: BonePic
+  Description: The description
 --- !u!1 &599916901
 GameObject:
   m_ObjectHideFlags: 0
@@ -9066,7 +9066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1735886405
 Transform:
   m_ObjectHideFlags: 0
@@ -10359,7 +10359,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2121049896
 MonoBehaviour:
   m_ObjectHideFlags: 0
